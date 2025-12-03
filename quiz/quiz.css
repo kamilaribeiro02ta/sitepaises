@@ -1,0 +1,109 @@
+/* Corpo do site */
+body {
+    margin: 0;
+    padding: 0;
+    background: #f7efd9;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.quiz-header h1 {
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* Container dos cards */
+.container {
+    width: 95%;
+    max-width: 700px;
+    margin: 40px auto;
+}
+
+/* Cartões do quiz */
+.quiz-card {
+    background: #fffef4;
+    padding: 20px;
+    border-radius: 30px;
+    margin-bottom: 25px;
+}
+
+.quiz-card h2 {
+    margin: 0 0 15px 0;
+    font-size: 1.3rem;
+    color: #449c4e;
+}
+
+/* Opções */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    padding: 12px;
+    background: #f3f0e5;
+    border-radius: 20px;
+    border: 1px solid #fffef4;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Efeito hover simples e escolar */
+.option:hover {
+    background: #e3e3e3;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .quiz-card {
+        padding: 15px;
+    }
+
+    .quiz-header h1 {
+        font-size: 1.6rem;
+    }
+}
+
+.menu {
+    background-color: #a6170f;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    z-index: 100;
+}
+
+/* LOGO */
+.logo {
+    height: 100px;
+    width: 100px; 
+}
+
+/* NAVIGATION LINKS (SEM LISTA) */
+.nav-links {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex: 1; /* ocupa o espaço restante */
+    justify-content: center;
+    gap: 90px;
+
+}
+
+/* LINKS */
+.nav-links a {
+   
+    color: #f7efd9c9;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+

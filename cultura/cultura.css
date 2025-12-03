@@ -1,0 +1,127 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F6E8D0;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+}
+
+
+
+.menu {
+    background-color: #a6170f;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    z-index: 100;
+}
+.logo {
+    height: 100px;
+    width: 100px; 
+}
+.nav-links {
+    display: flex;
+    flex: 1; /* ocupa o espaço restante */
+    justify-content: center;
+    gap: 90px;
+
+}
+.nav-links a {
+   
+    color: #f7efd9c9;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 1rem;
+}
+
+
+
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.card {
+    background: #f4ecdc;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.card-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.8rem;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: lowercase;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    color: #444;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background: #848484;
+    margin: 2rem 0;
+}
+
+
+
+@media (max-width: 900px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* nãoooo ta ficando certinho na telaaaaaaaaaaaaaaaaaaaaaaaa*/
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 2rem 1rem;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+    }
+}
